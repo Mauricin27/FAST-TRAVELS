@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fast Travel</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+           <img src="img/airplane.png">
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="INDEX.html">Home</a>
+            <a href="clima.html">Clima</a>
+            <a href="formulario.html">Conta</a>
+            <a href="">Ajuda</a>
+
+        </div>
+        <div class="toggle" id="navbar-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>FAST TRAVEL</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id metus malesuada, facilisis tellus in, sagittis velit. Aenean non interdum justo. Vestibulum eu pellentesque lacus. Pellentesque non nulla a arcu dictum scelerisque et vitae purus.</p>
+            <a href=""><button class="banner-btn">Veja Mais</button></a>
+        </div>
+    </section>
+    <br>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <img src="img/england.jpg" alt="Imagem 1">
+                <div class="description">Conheça a Inglaterra</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/france.jpg" alt="Imagem 2">
+                <div class="description">Conheça a França</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/germany.jpg" alt="Imagem 3">
+                <div class="description">Conheça a Alemanha</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/greece.jpg" alt="Imagem 4">
+                <div class="description">Conheça a Grécia</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/irlanda.jpg" alt="Imagem 5">
+                <div class="description">Conheça a Irlanda</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/italia.jpg" alt="Imagem 6">
+                <div class="description">Conhea a Itália</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/norway.jpg" alt="Imagem 7">
+                <div class="description">Conheça a Noruega</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/russia.jpg" alt="Imagem 8">
+                <div class="description">Conheça a Russia</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/spain.jpg" alt="Imagem 9">
+                <div class="description">Conheça a Espanha</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+            <div class="slide">
+                <img src="img/turkey.jpg" alt="Imagem 10">
+                <div class="description">Conheça a Turquia</div>
+                <p>Viage para vários lugares da Europa</p>
+            </div>
+        </div>
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+
+   
+    <section id="search-1">
+        <div class="search-container">
+            <input type=" text" id="searchInput" placeholder="Pesquisar cidade...">
+            <button class="search-btn" onclick="filterImages()">Buscar</button>
+        </div>
+    </section>
+
+    <main>
+        <div class="gallery">
+            <div class="item" data-name="Viagem - Paris, FR" data-price="300" data-title="França, Paris">
+                <img src="img/FOTO1.jpg"  style="max-width: 350px; height: 250px;">
+                <p>França, Paris</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Londres, ING" data-price="300" data-title="Engaterra, Londres">
+                <img src="img/FOTO2.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Englaterra, Londres</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Barcelona, ESP" data-price="250" data-title="Espanha, Barcelona">
+                <img src="img/FOTO3.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Espanha, Barcelona</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Madrid, ESP" data-price="250" data-title="Espanha, Madrid">
+                <img src="img/MADRID.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Espanha, Madrid</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Grecia" data-price="400" data-title="Grecia">
+                <img src="img/FOTO4.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Grecia</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Noruega" data-price="400" data-title="Noruega">
+                <img src="img/FOTO 5.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Noruega</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Munique" data-price="400" data-title="Alemanha, Munique">
+                <img src="img/FOTO6.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Alemanha, Munique</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Veneza , ITA" data-price="400" data-title="Italia, Veneza">
+                <img src="img/VENEZA.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Italia, Veneza</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Moscow" data-price="420" data-title="Russia, Moscow">
+                <img src="img/FOTO7.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Russia, Moscow</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+            <div class="item" data-name="Viagem - Turquia" data-price="480" data-title="Turquia">
+                <img src="img/FOTO9.jpg"  style="max-width: 350px; height: 250px;">
+                <p>Turquia</p>
+                <p style="color: rgb(168, 168, 19);">★★★★★</p>
+                <button class="open-modal">Comprar</button>
+            </div>
+
+            <!-- Adicione mais itens conforme necessário -->
+        </div>
+    </main>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="Imagem do Produto">
+                <h2 id="modalName">Nome do Produto</h2>
+                <form id="productForm">
+                    <label for="deliveryDate">Data de Embarque:</label>
+                    <input type="date" id="deliveryDate" required>
+                    
+                    <label for="deliveryTime">Horário:</label>
+                    <select id="deliveryTime">
+                        <option value="8-10">8:00 - 10:00</option>
+                        <option value="10-12">10:00 - 12:00</option>
+                        <option value="12-14">12:00 - 14:00</option>
+                        <option value="14-16">14:00 - 16:00</option>
+                    </select>
+                    
+                    <label for="class">Classe:</label>
+                    <select id="class">
+                        <option value="1">1ª Classe</option>
+                        <option value="2">2ª Classe</option>
+                        <option value="3">3ª Classe</option>
+                    </select>
+                    
+                    <label for="quantity">Quantidade:</label>
+                    <div class="quantity-control">
+                        <button type="button" id="decrease">⮜</button>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <button type="button" id="increase">⮞</button>
+                    </div>
+
+                    <p id="totalPrice">Total: R$ <span>0</span></p>
+                    
+                    <button type="button" id="cancel">Cancelar</button>
+                    <button type="submit" id="confirm">Confirmar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <section class="template">
+        <div class="template-area">
+            <h1>LET'S EXPLORE</h1>
+            <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam id metus malesuada, facilisis tellus in, sagittis velit. Aenean non interdum justo. Vestibulum eu pellentesque lacus. Pellentesque non nulla a arcu dictum scelerisque et vitae purus.</P>
+            <a href=""><button class="temp-btn">Veja Mais</button></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-area">
+            <div class="footer-content">
+                <h3>SERVIÇOS</h3>
+                <ul>
+                    <li><a href="#">Agendamento</a></li>
+                    <li><a href="#">Pagamento</a></li>
+                    <li><a href="#">Garantias</a></li>
+                    <li><a href="#">Seguros</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>AJUDA</h3>
+                <ul>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Novidades</a></li>
+                    <li><a href="#">Planos</a></li>
+                    <li><a href="#">Email</a></li>
+                </ul>
+            </div>
+            <div class="footer-content">
+                <h3>REDES SOCIAIS</h3>
+                <ul>
+                    <li><a href="#"><img src="img/instagram (2).png" style="max-width: 30px; height: 24px;"></a></li>
+                    <li><a href="#"><img src="img/youtube.png" style="max-width: 30px; height: 24px;"></a></li>
+                    <li><a href="#"><img src="img/whatsapp.png" style="max-width: 30px; height: 24px;"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-text">
+   
+            <p>&copy; 2024 Fast Travel. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+ 
+
+    
+
+ 
+
+
+    
+
+
+    <script src="page.js"></script>
+</body>
+</html>

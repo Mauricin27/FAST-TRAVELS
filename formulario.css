@@ -1,0 +1,251 @@
+* {
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #131212;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: transparent;
+    height: 30px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.logo img {
+    max-width: 100px;
+    height: 50px;
+    margin-top: 35px;
+} 
+
+.nav-links {
+    display: block;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 15px;
+    font-size: 17px;
+    color: white;
+
+}
+.nav-links a:hover {
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.bar {
+    width: 25px;
+    height: 4px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    margin-left: 250px;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.nav-links a {
+    text-align: center;
+    font-size: 1.0rem;
+    padding: 10px;
+    gap: 5px;
+    margin: 0;
+    color: white;
+}
+
+.nav-links a:hover {
+   border-bottom: 1px solid white;
+}
+
+.toggle {
+    display: flex;
+}
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    background-image: url("img/TRAVEL2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    align-items: center;
+    margin-top: -50px;
+}
+
+form {
+    color: #111111;
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 3px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #0c0c0c;
+    border-radius: 5px;
+    background-color: #fcfcfc;
+   
+}
+
+.form-group input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#cancelButton {
+    font-size: 15px;
+    padding: 6px 12px;
+    background-color: rgb(2, 97, 104);
+    color: rgb(245, 245, 245);
+    border: none;
+    border-radius: 2px;
+}
+#cancelButton:hover {
+    background-color: rgb(3, 56, 58);
+    color: white;
+}
+
+#confirmButton {
+    font-size: 15px;
+    padding: 6px 12px;
+    background-color: rgb(2, 97, 104);
+    color: rgb(218, 218, 218);
+    border: none;
+    border-radius: 2px;
+} 
+#confirmButton:hover {
+    background-color: rgb(3, 56, 68);
+    color: white;
+}
+
+.message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: green;
+}
+
+
+.footer {
+    background-color: #0e0d0d;
+    color: rgb(201, 201, 201);
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .footer-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .footer-content {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-content ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-content ul li a {
+    color: rgb(201, 201, 201);
+    text-decoration: none;
+  }
+  
+  .footer-content ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-text {
+    border-top: 1px solid #cecece;
+    padding-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-area {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+  }
+
+
+
+
